@@ -122,14 +122,14 @@
 
 })(jQuery);
 
-// script.js
-
-// Get the button
 const goToTopBtn = document.getElementById('goToTopBtn');
 
-// Show the button when the user scrolls down 20px from the top of the document
+// Show the button when the user scrolls past halfway down the document
 window.onscroll = function () {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    const documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    if (scrollPosition > documentHeight / 2) {
         goToTopBtn.style.display = 'block';
     } else {
         goToTopBtn.style.display = 'none';
