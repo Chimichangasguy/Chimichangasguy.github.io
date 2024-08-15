@@ -116,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #e0f8f7;
+		background-color: #EAFFFC;
 		color: rgb(45, 45, 45);
 	}
 
@@ -2349,7 +2349,7 @@ input, select, textarea {
 	}
 
 		.icon.alt:hover {
-			background-color: #b3ffe2;
+			background-color: #F1A208;
 		}
 
 		.icon.alt:active {
@@ -2881,6 +2881,16 @@ input, select, textarea {
         border: 1px solid transparent; /* Ensures border blends with the background */
     }
 
+	.statistics li a {
+		color: #ffffff !important; /* Set the default color of the link */
+		text-decoration: none !important; /* Remove the underline from links */
+	}
+	
+	.statistics li a:hover {
+		color: #ffffff; /* Keep the text color white on hover */
+		text-decoration: none; /* Optional: Add underline on hover if needed */
+	}
+
     .statistics li:hover {
         background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(0,0,0,0.1));
         transform: scale(1.02);
@@ -2888,23 +2898,15 @@ input, select, textarea {
 
     /* Style-specific colors */
     .statistics li.style1 {
-        background-color: #f4a4a4; /* Soft Pink */
+        background-color: #EC7357; /* Soft Pink */
     }
 
     .statistics li.style2 {
-        background-color: #d8a1d0; /* Light Lavender */
+        background-color: #7F6A93; /* Light Lavender */
     }
 
     .statistics li.style3 {
-        background-color: #a4b9d0; /* Soft Blue */
-    }
-
-    .statistics li.style4 {
-        background-color: #9fc4e6; /* Sky Blue */
-    }
-
-    .statistics li.style5 {
-        background-color: #8be0ff; /* Light Sky Blue */
+        background-color: #558564; /* Soft Blue */
     }
 
     .statistics li strong, .statistics li b {
@@ -2912,7 +2914,7 @@ input, select, textarea {
         font-size: 1.5em; /* Adjusted for better fit */
         line-height: 1.1;
         color: inherit !important;
-        font-weight: 300;
+        font-weight: 450;
         letter-spacing: -0.025em;
     }
 
@@ -3205,12 +3207,12 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
-		color: #4a4a4a;
+		color: #ffffff;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #effdd5;
+		background-color: #3C4F76;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3218,11 +3220,11 @@ input, select, textarea {
 	}
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			color: #dbdbdb;
 		}
 
 		#nav a:hover {
-			color: #636363;
+			color: #b3b4b9;
 		}
 
 		#nav strong, #nav b {
@@ -3234,16 +3236,16 @@ input, select, textarea {
 		}
 
 		#nav blockquote {
-			border-left-color: #effdd5;
+			border-left-color: #3C4F76;
 		}
 
 		#nav code {
 			background: #dedede40;
-			border-color: #effdd5;
+			border-color: #3C4F76;
 		}
 
 		#nav hr {
-			border-bottom-color: #effdd5;
+			border-bottom-color: #3C4F76;
 		}
 
 		#nav + #main {
@@ -3286,7 +3288,7 @@ input, select, textarea {
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: #BB8588;
 						box-shadow: none;
 					}
 
@@ -3294,7 +3296,7 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: #effdd5;
+			background-color: #3C4F76;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3418,7 +3420,7 @@ input, select, textarea {
 				#main input[type="button"].primary:active,
 				#main button.primary:active,
 				#main .button.primary:active {
-					background-color: #effdd5;
+					background-color: #3C4F76;
 				}
 
 				#main input[type="submit"].primary.icon:before,
@@ -3785,7 +3787,7 @@ input, select, textarea {
 	content: '';
 	position: absolute;
 	width: 6px;
-	background-color: rgb(41, 41, 41);
+	background-color: #5b5b5b;
 	top: 0;
 	bottom: 0;
 	left: 50%;
@@ -3816,7 +3818,7 @@ input, select, textarea {
 	width: 25px;
 	height: 25px;
 	right: -12px;
-	background-color: rgb(40, 40, 40);
+	background-color: #5b5b5b;
 	border: 4px solid #FF9F55;
 	top: 15px;
 	border-radius: 50%;
@@ -3842,9 +3844,9 @@ input, select, textarea {
 	width: 0;
 	z-index: 1;
 	right: 30px;
-	border: medium solid rgb(40, 40, 40);
+	border: medium solid #5b5b5b;
 	border-width: 10px 0 10px 10px;
-	border-color: transparent transparent transparent rgb(40, 40, 40);
+	border-color: transparent transparent transparent #5b5b5b;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -3858,7 +3860,7 @@ input, select, textarea {
 	left: 30px;
 	border: medium solid rgb(40, 40, 40);;
 	border-width: 10px 10px 10px 0;
-	border-color: transparent rgb(40, 40, 40) transparent transparent;
+	border-color: transparent #5b5b5b transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -3872,7 +3874,7 @@ input, select, textarea {
 	background-color: #e0f8f7;
 	position: relative;
 	border-radius: 15px;
-	border-color: rgb(40, 40, 40);
+	border-color: rgb(39, 36, 36);
 	opacity: 0.7; /* Initial opacity */
 	transition: all 0.3s ease; /* Add smooth transition */
 }
@@ -3894,7 +3896,7 @@ input, select, textarea {
 	/* Make sure that all arrows are pointing leftwards */
 	.timeline .container::before {
 		left: 60px;
-		border: medium solid #282828;
+		border: medium solid #000000;
 		border-width: 10px 10px 10px 0;
 		border-color: transparent rgb(40, 40, 40) transparent transparent;
 	}
