@@ -2349,7 +2349,7 @@ input, select, textarea {
 	}
 
 		.icon.alt:hover {
-			background-color: rgba(26, 45, 107, 0.667);
+			background-color: #b3ffe2;
 		}
 
 		.icon.alt:active {
@@ -3894,7 +3894,7 @@ input, select, textarea {
 	/* Make sure that all arrows are pointing leftwards */
 	.timeline .container::before {
 		left: 60px;
-		border: medium solid rgb(40, 40, 40);
+		border: medium solid #282828;
 		border-width: 10px 10px 10px 0;
 		border-color: transparent rgb(40, 40, 40) transparent transparent;
 	}
@@ -3910,25 +3910,25 @@ input, select, textarea {
 	}
 }
 
-/* styles.css */
-
-/* Style for the "Go to Top" button */
 #goToTopBtn {
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    display: none; /* Hidden by default */
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    right: -100px;
+    background-color: transparent; /* Transparent background */
+    color: #282828 !important; /* Arrow color */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    box-shadow: none; /* Remove any box shadow */
+    font-size: 30px; /* Size of the up arrow */
     cursor: pointer;
-    font-size: 16px;
     z-index: 1000;
+    padding: 0; /* Remove padding */
+    line-height: 1; /* Adjust line height */
+    width: auto; /* Remove fixed width */
+    height: auto; /* Remove fixed height */
+	transform: rotate(270deg); /* Rotate the arrows 90 degrees */
 }
 
 #goToTopBtn:hover {
-    background-color: #0056b3;
+    color: #0056b3; /* Change arrow color on hover */
 }
-
